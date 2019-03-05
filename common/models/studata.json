@@ -1,0 +1,56 @@
+{
+  "name": "studata",
+  "plural": "student",
+  "base": "PersistedModel",
+  
+  "options": {
+    "idInjection": true,
+    "mysql": {
+      "schema": "student",
+      "table": "studata"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "number",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "mysql": {
+        "columnName": "name",
+        "dataType": "string",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "age": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "age",
+        "dataType": "number",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
